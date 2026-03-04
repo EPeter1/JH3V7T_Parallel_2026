@@ -1,7 +1,8 @@
-__kernel void add_vectors(__global const float2* vector_1,
-                         __global const float2* vector_2,
-                         __global float2* sum,
-                         const int size)
+__kernel void add_vectors(
+    __global const float2* vector_1,
+    __global const float2* vector_2,
+    __global float2* sum,
+    const int size)
 {
     int id = get_global_id(0);
 
